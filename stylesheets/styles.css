@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 255, 255, 0.322);
+}
+div h1.bud-cal{
+    background-color: black;
+    color: white;
+    height: 10vh;
+    min-height: 70px;
+    max-height: 70px;
+    padding-top: 17px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 2vw;
+}
+.container div{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgb(158, 252, 251);
+    margin: 15px 20px 0px 20px;
+}
+.container p.padd{
+    padding: 20px 20px 0px 20px;
+}
+.container p.mid-poi{
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    color: rgb(0, 255, 0);
+    font-weight: bolder;
+    font-size: larger;
+}
+.text-field{
+    margin-top: 50px;
+    border: none;
+    padding: 10px 0px 10px 10px;
+    border-radius: 50px;
+    width: 25%;
+    min-width: 290px;
+    outline: none;
+}
+div.text-box{
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+}
+input.money{
+    width: 7%;
+    min-width: 100px;
+    border: none;
+    padding: 8px 5px 8px 10px;
+    border-radius: 50px;
+    outline: none;
+}
+.flex-box{
+    text-align: center;
+}
+.button{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+.div{
+    text-align: center;
+    margin-top: 10px;
+}
+#date{
+    margin-left: 26vw;
+    margin-right: 1vw;
+    margin-top: 10px;
+}
+#select{
+    margin-top: 10px;
+    border: none;
+    padding: 10px 0px 10px 10px;
+    border-radius: 50px;
+    width: 20%;
+    min-width: 200px;
+    outline: none;
+}
+.buttons-flex{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.buttons-flex div{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+.araa-p{
+    margin-top: 10px;
+    color: red;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+div.dives{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+div.dives p{
+    font-size: 12px;
+    line-height: 30px;
+}
+div.dives p.child{
+    margin-left: 70px;
+}
+button.edit{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+}
+button.child-2{
+    margin-left: 10px;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+@media (max-width:873px){
+    .buttons-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    div.dives{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:435px){
+    input.money{
+        margin: 1vw 45vw 0vw 0vw;
+    }
+    #date{
+        margin: 0vw 45vw 0vw 0vw;
+    }
+    select#select{
+        margin: 0vw 20vw 1vw 0vw;
+    }
+    div.dives p.child{
+        margin-left: 70px;
+        margin-left: 20px;
+    }
+    div.dives p{
+        font-size: 10px;
+    }
+}
+@media (max-width:321px){
+    .text-field{
+         min-width: 240px;
+         font-size: 14px;
+    }
+}

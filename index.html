@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 class="bud-cal">BUDGET</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div>
+                <p class="padd">Monthly Income</p>
+                <p class="mid-poi">Rs&nbsp;<span id="mid">0</span></p>
+            </div>
+            <div>
+                <p class="padd">Budget Available</p>
+                <p class="mid-poi">Rs&nbsp;<span id="mid-2">0</span></p>
+            </div>
+            <div id="last-child">
+                <p class="padd">Money spent</p>
+                <p class="mid-poi" >Rs&nbsp; <span id="mid-3">0</span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="round">
+            <div class="text-box">
+                <form action="#">
+                    <input type="text" placeholder="Description" name="money" class="text-field" id="descript-1">
+                    <input type="number" placeholder="Amount" name="amount" class="money" id="mon-2">
+                </form>
+                <div class="div">
+                    <input type="date" class="money date" id="date">
+                    <div class="araa-p">
+                        <p id="recall"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-box">
+                <button class="button" id="first">Add Income<button>
+            </div>
+            <div class="text-box">
+                <input type="text" placeholder="Description" name="money" class="text-field" id="descript-2">
+                <input type="number" placeholder="Amount" name="amount" class="money" id="mon-4">
+            </div>
+            <div class="div">
+                <select name="categories" id="select">
+                    <option value="Categories" selected>Categories</option>
+                    <option>Housing</option>
+                    <option>Transportation </option>
+                    <option>Food and dinning </option>
+                    <option>Personal care </option>
+                    <option>Debt payments </option>
+                    <option>Entertainment </option>
+                    <option>Health and insurance </option>
+                    <option>Education </option>
+                    <option>Donations </option>
+                    <option>Savings </option>
+                    <option>Miscellaneous </option>
+                </select>
+                <input type="date" class="money date" id="date-2">
+                <div class="araa-p">
+                    <p id="recall-2"></p>
+                </div>
+            </div>
+            <div class="flex-box">
+                <button class="button" style="background-color: blue;" id="second">Add Expense<button>
+            </div>
+        </div>
+        <div>
+            <div class="buttons-flex">
+                <div id="div-1">
+                    <p style="color: red;">Monthly Income </p>
+                </div>
+                <div id="div-2">
+                    <p style="color: blue;">Expenses </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
